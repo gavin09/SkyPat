@@ -1,4 +1,4 @@
 usr/include/*
-usr/lib/lib*.so
-usr/lib/pkgconfig/*
-usr/share/pat/*
+usr/lib/*/pkgconfig/*
+usr/share/skypat/README.md
+usr/share/skypat/examples/*
