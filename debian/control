@@ -1,23 +1,33 @@
-Source: pat
-Priority: extra
-Maintainer: Peter <peter@skymizer.com>
-Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.3
+Source: skypat
 Section: libs
-Homepage: <insert the upstream URL, if relevant>
-#Vcs-Git: git://git.debian.org/collab-maint/pat.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/pat.git;a=summary
+Priority: optional
+Maintainer: Gavin Lai (賴建宇) <gavin09@gmail.com>
+Uploaders: SZ Lin (林上智) <szlin@debian.org>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.0.0
+Homepage: https://github.com/skymizer/SkyPat
+Vcs-Git: https://anonscm.debian.org/git/collab-maint/skypat.git
+Vcs-Browser: https://anonscm.debian.org/git/collab-maint/skypat.git
 
-Package: pat-dev
+Package: libskypat-dev
 Section: libdevel
 Architecture: any
-Depends: pat (= ${binary:Version})
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+         wget, automake, autoconf,
+         libtool, build-essential,
+         libskypat
+Description: Development files for skypat
+ skypat provides an unit-test framework. Additionally, skypat provides
+ performance information to help developers optimize functions.
+ .
+ This package contains the header files to develop unit test which make use of
+ skypat.
 
-Package: pat
+Package: libskypat
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: C++ performance analyzing and testing framework
+ skypat provides an unit-test framework. Additionally, skypat provides
+ performance information to help developers optimize functions.
