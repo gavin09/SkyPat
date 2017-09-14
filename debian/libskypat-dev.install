@@ -1,4 +1,3 @@
 usr/include/*
 usr/lib/*/pkgconfig/*
-usr/share/skypat/README.md
-usr/share/skypat/examples/*
+usr/lib/*/libskypat*.so
