@@ -16,7 +16,7 @@ Depends: ${misc:Depends},
          ${shlibs:Depends},
          wget, automake, autoconf,
          libtool, build-essential,
-         libskypat3
+         libskypat3 (= ${binary:Version})
 Description: Development files for skypat
  skypat provides an unit-test framework. Additionally, skypat provides
  performance information to help developers optimize functions.
